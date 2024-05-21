@@ -5,6 +5,10 @@ import Home from "./scenes/home";
 import About from "./scenes/about";
 import { GlobalStyle } from "./GlobalStyle";
 import { motion } from 'framer-motion';
+import Skills from './scenes/skills/index';
+import Projects from './scenes/projects/index';
+import Contact from './scenes/contact/index';
+import Divider from "./components/common/Divider";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -40,12 +44,49 @@ function App() {
         />
       </motion.div>
 
+      <Divider />
+
       <motion.div
         margin="0 0 -200px 0"
         amount="all"
         onViewportEnter={() => setSelectedPage("about")}
       >
         <About
+          language={language}
+          selectedPage={selectedPage}
+        />
+      </motion.div>
+
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("skills")}
+      >
+        <Skills
+          setSelectedPage={setSelectedPage}
+          language={language}
+          selectedPage={selectedPage}
+        />
+      </motion.div>
+
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("projects")}
+      >
+        <Projects
+          setSelectedPage={setSelectedPage}
+          language={language}
+          selectedPage={selectedPage}
+        />
+      </motion.div>
+
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("contact")}
+      >
+        <Contact
           setSelectedPage={setSelectedPage}
           language={language}
           selectedPage={selectedPage}

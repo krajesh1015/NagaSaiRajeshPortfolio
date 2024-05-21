@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { colors } from "./styles/colors";
+import { fonts } from "./styles/fonts";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -7,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: ${fonts.poppins};
 }
 
 ::-webkit-scrollbar{

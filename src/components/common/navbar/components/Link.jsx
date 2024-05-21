@@ -22,13 +22,7 @@ const LinkComponent = styled.p`
   }
 `;
 
-const Link = ({
-  label,
-  page,
-  selectedPage,
-  setSelectedPage,
-  setMenuToggled,
-}) => {
+const Link = ({ label, page, selectedPage, setSelectedPage }) => {
   const lowerPage = page.toLowerCase();
 
   return (
@@ -39,9 +33,6 @@ const Link = ({
       href={`#${lowerPage}`}
       onClick={() => {
         setSelectedPage(lowerPage);
-        setTimeout(() => {
-          setMenuToggled(false);
-        }, 300);
       }}
     >
       <LinkComponent selected={page === selectedPage ? true : false}>
