@@ -1,3 +1,5 @@
+import articlePt from "../assets/articles/TCC.pdf"
+
 export const texts = {
   pt: {
     landing: {
@@ -18,10 +20,12 @@ export const texts = {
       empresa: " IAtrix",
       link: "https://iatrix.com.br",
       text2: ", uma nova empresa de tecnologia. Comecei a aprender desenvolvimento web durante a pandemia, através de cursos online para aprender o básico e aprimorar minhas habilidades, garantindo que aprendi o suficiente para seguir em frente e tentar as tecnologias mais recentes. Aqui estão algumas tecnologias com as quais estou familiarizada:",
+      text3: "Fun fact: meu TCC foi sobre a utilização de React para a programação de uma plataforma digital para um concurso de desenhos amadores. O artigo também foi aceito na Conferência Nacional de Educação (CONEDU) 2024. Você pode fazer download do artigo clicando no botão abaixo.",
+      article: articlePt
     },
     skills: {
       title: "<habilidades/>",
-      text: `Desde o início da minha jornada como desenvolvedora, aprimorei minhas soft skills, sempre buscando ser uma profissional melhor. `,
+      text: "Desde o início da minha jornada como desenvolvedora, aprimorei minhas soft skills, sempre buscando ser uma profissional melhor.",
       1: {
         title: "aprendizado contínuo",
         text: "A tecnologia nunca para de se atualizar, é por isto que aqueles que trabalham com tecnologia não devem parar de se atualizar também.",
@@ -64,6 +68,8 @@ export const texts = {
       empresa: " IAtrix",
       link: "https://iatrix.com.br",
       text2: ", a new tech company. I started learning web development during the pandemic, through online courses to learn the basics and improve my skills, making sure I learned enough to move forward and try the latest technologies. Here are some technologies I'm familiar with:",
+      text3: "Fun fact: my thesis was about using React to program a digital platform for an amateur drawing contest.The article was also accepted at the National Education Conference (CONEDU) 2024. You can download the article by clicking the button below, available only in Portuguese.",
+      article: articlePt
     },
     skills: {
       title: "<skills/>",
