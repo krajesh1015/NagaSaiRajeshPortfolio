@@ -32,7 +32,7 @@ const SceneLayout = styled.div`
 
 const Row = styled.div`
   display: flex;
-  align-items: center;
+  align-items: ${({ align }) => align || "center"};
   justify-content: ${({ justify }) => justify || "space-evenly"};
   gap: ${({ gap }) => gap || "1rem"};
   width: ${({ width }) => width || "100%"};
@@ -89,6 +89,7 @@ const RightSideContent = styled.div`
 `;
 
 const LeftSide = styled.div`
+  order: 1;
   .empresa {
     font-weight: bold;
     margin: 0;
@@ -102,7 +103,6 @@ const LeftSide = styled.div`
 
   @media screen and (min-width: 1279px) {
     flex-basis: 40%;
-    order: 1;
   }
 `;
 

@@ -1,4 +1,5 @@
-
+import arte from '../assets/projects/arte.png'
+import br from '../assets/projects/br-finanças.png'
 
 export const projects = [
     {
@@ -10,7 +11,7 @@ export const projects = [
         technologies: ["React", "Styled-Components"],
         path: "https://artedecaderno.ifsuldeminas.edu.br",
         git: "https://github.com/ArtedeCaderno-IFSULDEMINAS/Arte-de-Caderno",
-        img: "arte"
+        img: arte
     },
     {
         title: "BR Finanças",
@@ -21,7 +22,7 @@ export const projects = [
         technologies: ["HandleBars", "Express", "MySQL"],
         path: null,
         git: "https://github.com/BeatrizNeaime/BR-financas",
-        img: "br-finanças"
+        img: br
     },
     {
         title: "Patinhas Felizes",

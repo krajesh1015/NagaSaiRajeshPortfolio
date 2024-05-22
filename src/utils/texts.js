@@ -36,7 +36,7 @@ export const texts = {
       },
       3: {
         title: "mente aberta",
-        text: "Quando você trabalha para pessoas, você precisa aceitar novas ideias de clientes ou colegas de equipe e ser capaz de trabalhar nelas.",
+        text: "Quando se trabalha para pessoas, é necessário aceitar novas ideias de clientes ou colegas de equipe e ser capaz de trabalhar nelas.",
 
       }
     },
