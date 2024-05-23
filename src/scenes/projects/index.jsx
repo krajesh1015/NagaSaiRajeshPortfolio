@@ -30,6 +30,8 @@ const Projects = ({ language }) => {
         <Project project={projects[0]} language={language} />
         <Project project={projects[1]} language={language} />
         <Project project={projects[2]} language={language} />
+        <Project project={projects[3]} language={language} />
+        <Project project={projects[4]} language={language} />
       </Row>
     </SceneLayout>
   );

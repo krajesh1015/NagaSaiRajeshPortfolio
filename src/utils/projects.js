@@ -1,5 +1,8 @@
 import arte from '../assets/projects/arte.png'
 import br from '../assets/projects/br-finanças.png'
+import patinhas from '../assets/projects/patinhas-felizes.png'
+import advice from '../assets/projects/advice.png'
+import splitter from '../assets/projects/splitter.png'
 
 export const projects = [
     {
@@ -33,7 +36,7 @@ export const projects = [
         technologies: ["HandleBars", "Express", "MySQL"],
         path: null,
         git: "https://github.com/BeatrizNeaime/PatinhasFelizes",
-        img: "patinhas-felizes"
+        img: patinhas
     },
     {
         title: "Advice",
@@ -44,7 +47,7 @@ export const projects = [
         technologies: ["React", "TailwindCSS"],
         path: "https://imaginative-paletas-b1d609.netlify.app",
         git: "https://github.com/BeatrizNeaime/advice.github.io",
-        img: "advice"
+        img: advice
     },
     {
         title: "Splitter",
@@ -55,6 +58,6 @@ export const projects = [
         technologies: ["React", "TailwindCSS"],
         path: "https://fm-tip-calculator-pi.vercel.app",
         git: "https://github.com/BeatrizNeaime/FM-tip-calculator",
-        img: "splitter"
+        img: splitter
     }
 ]

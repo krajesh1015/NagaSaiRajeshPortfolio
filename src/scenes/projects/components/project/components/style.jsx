@@ -16,6 +16,8 @@ const ProjectCard = styled.div`
   .project-hover {
     position: absolute;
     width: 100%;
+    max-width: 100%;
+    overflow: scroll;
     bottom: 0;
     left: 0;
     height: 40px;
@@ -23,8 +25,10 @@ const ProjectCard = styled.div`
     transition: all ease-in-out 0.3s;
     overflow: hidden;
     border-radius: 0 100px 10px 10px;
+  }
 
-    &:hover {
+  &:hover {
+    .project-hover {
       transition: all ease-in-out 0.5s;
       background-color: ${colors.purple};
       height: 100%;
@@ -43,6 +47,7 @@ const ProjectImage = styled.div`
   border-radius: 10px;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
   background-image: url(${(props) =>
     props.src ? props.src : "https://via.placeholder.com/150"});
 `;
@@ -77,4 +82,55 @@ const ProjectDescription = styled.p`
   }
 `;
 
-export { ProjectCard, ProjectImage, ProjectTitle, ProjectDescription };
+const ProjectTechnologies = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-family: ${fonts.poppins};
+  font-weight: 400;
+  color: white;
+  transition: all ease-in-out 0.5s;
+  background-color: ${colors.blue};
+  border-radius: 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.6rem;
+  }
+`;
+
+const ProjectLink = styled.a`
+  font-size: 0.8rem;
+  font-family: ${fonts.poppins};
+  font-weight: 400;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: all ease-in-out 0.5s;
+  text-decoration: none;
+  background: ${colors["deep-purple"]};
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:hover {
+    transition: all ease-in-out 0.5s;
+    background: linear-gradient(
+      64.5deg,
+      rgba(245, 116, 185, 1) 14.7%,
+      rgba(89, 97, 223, 1) 88.7%
+    );
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.6rem;
+  }
+`;
+
+export {
+  ProjectCard,
+  ProjectImage,
+  ProjectTitle,
+  ProjectDescription,
+  ProjectTechnologies,
+  ProjectLink,
+};

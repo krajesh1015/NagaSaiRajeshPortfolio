@@ -46,6 +46,7 @@ export const texts = {
     },
     contact: {
       title: "<contato/>",
+      text: "Sinta-se a vontade para me enviar uma mensagem!.",
       btn: "Envie uma mensagem"
     }
   },
@@ -94,6 +95,7 @@ export const texts = {
     },
     contact: {
       title: "<contact/>",
+      text: "Feel free to send me a message!.",
       btn: "Send a message"
     }
   }
