@@ -19,14 +19,34 @@ const Contact = ({ language }) => {
   const desktop = useMediaQuery("(min-width: 1019px)");
   const [toast, setToast] = useState(false);
   const [state, handleSubmit] = useForm("xwkgjbpr");
+  const [toastData, setToastData] = useState({
+    type: "",
+    message: "",
+    code: "",
+  });
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+    await handleSubmit(e);
+  };
 
   if (state.succeeded) {
-    return <Toast />;
+    setToast(true);
+    setToastData({
+      type: "success",
+      message: texts[language].contact.success,
+      code: "",
+    });
   }
 
   if (state.errors) {
     console.log(state.errors);
     setToast(true);
+    setToastData({
+      type: "error",
+      message: texts[language].contact.error,
+      code: state.errors.getFormErrors(),
+    });
     return;
   }
 
@@ -40,7 +60,7 @@ const Contact = ({ language }) => {
         flexDirection: "column",
       }}
     >
-      {toast && <Toast />}
+      <Toast />
       <Column width={desktop ? "50%" : "100%"}>
         <PageTitle>{texts[language].contact.title}</PageTitle>
         <Divider width={"30%"} />
@@ -61,14 +81,25 @@ const Contact = ({ language }) => {
         </RightSide>
         <LeftSide>
           <p>{texts[language].contact.text}</p>
-          <form style={{ marginTop: "1rem" }} onSubmit={handleSubmit}>
+          <form
+            action="https://formsubmit.co/beatrizneaime@outlook.com"
+            method="POST"
+            style={{
+              margin: "2rem 0",
+            }}
+          >
+            {" "}
             <Column>
               <FormGroup>
-                <Label>{language === "en" ? "Name" : "Nome"}</Label>
+                <Label htmlFor="name">
+                  {language === "en" ? "Name" : "Nome"}
+                </Label>
                 <Input
                   type="text"
                   placeholder={language === "en" ? "Name" : "Nome"}
                   name="name"
+                  id="name"
+                  required
                 />
                 <ValidationError
                   prefix="Name"
@@ -77,8 +108,14 @@ const Contact = ({ language }) => {
                 />
               </FormGroup>
               <FormGroup>
-                <Label>E-mail</Label>
-                <Input type="email" placeholder="e-mail" name="email" />
+                <Label htmlFor="email">E-mail</Label>
+                <Input
+                  type="email"
+                  placeholder="e-mail"
+                  name="email"
+                  id="email"
+                  required
+                />
                 <ValidationError
                   prefix="Email"
                   field="email"
@@ -86,13 +123,17 @@ const Contact = ({ language }) => {
                 />
               </FormGroup>
               <FormGroup>
-                <Label>{language === "en" ? "Message" : "Mensagem"}</Label>
+                <Label htmlFor="message">
+                  {language === "en" ? "Message" : "Mensagem"}
+                </Label>
                 <TextArea
                   type="text"
                   placeholder={language === "en" ? "Message" : "Mensagem"}
                   cols={30}
                   rows={10}
                   name="message"
+                  id="message"
+                  required
                 />
                 <ValidationError
                   prefix="Message"
