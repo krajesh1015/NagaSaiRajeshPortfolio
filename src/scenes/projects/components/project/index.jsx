@@ -9,10 +9,10 @@ import {
   ProjectTitle,
 } from "./components/style";
 
-const Project = ({ project, language }) => {
+const Project = ({ project, language, handleClick }) => {
   const desktop = useMediaQuery("(min-width: 1019px)");
   return (
-    <ProjectCard>
+    <ProjectCard onClick={handleClick}>
       <ProjectImage src={project.img} />
       <div className="project-hover">
         <ProjectTitle>{project.title}</ProjectTitle>
@@ -37,12 +37,12 @@ const Project = ({ project, language }) => {
           }}
         >
           {project.git && (
-            <ProjectLink>
+            <ProjectLink href={project.git}>
               <i className="fab fa-github"></i> GitHub
             </ProjectLink>
           )}
           {project.path && (
-            <ProjectLink>
+            <ProjectLink href={project.path}>
               <i className="fas fa-external-link-alt"></i>{" "}
               {language === "pt" ? "Visitar" : "Visit"}
             </ProjectLink>

@@ -19,8 +19,8 @@ export const projects = [
     {
         title: "BR Finanças",
         subtitle: {
-            pt: "Um aplicativo para controle financeiro. Como este projeto foi feito como projeto interdisciplinar, o link do deploy não está disponível.",
-            en: "A financial control app. As this project was made as an interdisciplinary project, the deploy link is not available."
+            pt: "Um website para controle financeiro. Como este projeto foi feito como projeto interdisciplinar, o link do deploy não está disponível.",
+            en: "A financial control website. As this project was made as an interdisciplinary project, the deploy link is not available."
         },
         technologies: ["HandleBars", "Express", "MySQL"],
         path: null,

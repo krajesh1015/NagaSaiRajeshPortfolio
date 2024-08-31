@@ -4,6 +4,7 @@ import PageTitle from "./../../components/common/PageTitle";
 import { texts } from "./../../utils/texts";
 import Divider from "./../../components/common/Divider";
 import Skill from "./components/skill";
+import { motion } from "framer-motion";
 
 const Skills = ({ language }) => {
   const desktop = useMediaQuery("(min-width: 1279px)");
@@ -18,10 +19,21 @@ const Skills = ({ language }) => {
       }}
     >
       <Column width={desktop ? "50%" : "100%"}>
-        <PageTitle style={{ alignSelf: "flex-start" }}>
-          {texts[language].skills.title}
-        </PageTitle>
-        <Divider width={"30%"} />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: desktop ? -200 : -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <PageTitle style={{ alignSelf: "flex-start" }}>
+            {texts[language].skills.title}
+          </PageTitle>
+          <Divider width={"30%"} />
+        </motion.div>
         <p>{texts[language].skills.text}</p>
       </Column>
       <Row align="flex-start">

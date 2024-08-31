@@ -1,7 +1,14 @@
 import articlePt from "../assets/articles/TCC.pdf"
+import ptcv from "../assets/cv/BeatrizNeaime_CV[PT].pdf"
+import encv from "../assets/cv/BeatrizNeaime_CV[EN].pdf"
 
 export const texts = {
   pt: {
+    cv: {
+      title: "Currículo - Beatriz Neaime",
+      btn: "Currículo",
+      cv: ptcv
+    },
     landing: {
       subtitle: "Desenvolvedora Full Stack.",
       contact: "Fale Comigo",
@@ -16,11 +23,11 @@ export const texts = {
     },
     about: {
       title: "<sobre/>",
-      text: "Olá! Meu nome é Beatriz Neaime, sou Engenheira de Computação e desenvolvedora web full stack na",
+      text: "Olá! Meu nome é Beatriz e sou Engenheira de Computação. Atualmente, estou cursando pós-graduação em Engenharia de Software, aprofundando meus conhecimentos e habilidades na área. Trabalho como Desenvolvedora Full Stack Pleno na",
       empresa: " IAtrix",
       link: "https://iatrix.com.br",
-      text2: ", uma nova empresa de tecnologia. Comecei a aprender desenvolvimento web durante a pandemia, através de cursos online para aprender o básico e aprimorar minhas habilidades, garantindo que aprendi o suficiente para seguir em frente e tentar as tecnologias mais recentes. Aqui estão algumas tecnologias com as quais estou familiarizada:",
-      text3: "Fun fact: meu TCC foi sobre a utilização de React para a programação de uma plataforma digital para um concurso de desenhos amadores. O artigo também foi aceito na Conferência Nacional de Educação (CONEDU) 2024. Você pode fazer download do artigo clicando no botão abaixo.",
+      text2: ", onde tenho a oportunidade de criar e aprimorar soluções tecnológicas completas, desde a interface do usuário até a infraestrutura de servidores. Comecei a aprender desenvolvimento web durante a pandemia, através de cursos online para aprender o básico e aprimorar minhas habilidades, garantindo que aprendi o suficiente para seguir em frente e tentar as tecnologias mais recentes. Estou sempre em busca de novos desafios e oportunidades para aplicar e expandir meu conhecimento. Aqui estão algumas tecnologias com as quais estou familiarizada:",
+      text3: "Quer saber mais sobre minha jornada? Você pode baixar meu currículo clicando no botão abaixo.",
       article: articlePt
     },
     skills: {
@@ -42,7 +49,7 @@ export const texts = {
     },
     projects: {
       title: "<projetos/>",
-      text: "Projetos são maneiras importantes de melhorar suas habilidades e mostrar o que você é capaz de fazer. Aqui estão alguns dos meus projetos mais recentes:",
+      text: "Projetos são maneiras importantes de melhorar suas habilidades e mostrar o que você é capaz de fazer. Aqui estão alguns dos meus projetos mais recentes. Você pode clicar na imagem para saber mais.",
     },
     contact: {
       title: "<contato/>",
@@ -51,6 +58,11 @@ export const texts = {
     }
   },
   en: {
+    cv: {
+      title: "Beatriz Neaime's CV",
+      btn: "CV",
+      cv: encv
+    },
     landing: {
       subtitle: "Full Stack Developer.",
       contact: "Contact Me",
@@ -65,11 +77,11 @@ export const texts = {
     },
     about: {
       title: "<about/>",
-      text: "Hi! My name is Beatriz Neaime, I'm a Computer Engineer and a full stack web developer at",
+      text: "Hello! My name is Beatriz and I am a Computer Engineer. I am currently pursuing a postgraduate degree in Software Engineering, furthering my knowledge and skills in the field. I work as a Mid-Level Full Stack Developer at",
       empresa: " IAtrix",
       link: "https://iatrix.com.br",
-      text2: ", a new tech company. I started learning web development during the pandemic, through online courses to learn the basics and improve my skills, making sure I learned enough to move forward and try the latest technologies. Here are some technologies I'm familiar with:",
-      text3: "Fun fact: my thesis was about using React to program a digital platform for an amateur drawing contest.The article was also accepted at the National Education Conference (CONEDU) 2024. You can download the article by clicking the button below, available only in Portuguese.",
+      text2: ", where I have the opportunity to create and enhance complete technological solutions, from user interfaces to server infrastructure. I started learning web development during the pandemic, through online courses to learn the basics and enhance my skills, ensuring I learned enough to move forward and try the latest technologies. I am always looking for new challenges and opportunities to apply and expand my knowledge. Here are some technologies I am familiar with:",
+      text3: "Want to know more about my journey? You can download my CV by clicking the button below.",
       article: articlePt
     },
     skills: {
@@ -91,7 +103,7 @@ export const texts = {
     },
     projects: {
       title: "<projects/>",
-      text: "Projects are important ways to improve your skills and show what you are capable of. Here are some of my most recent projects:",
+      text: "Projects are important ways to improve your skills and show what you are capable of. Here are some of my most recent projects. You can click on the image to find out more. ",
     },
     contact: {
       title: "<contact/>",

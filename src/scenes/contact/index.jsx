@@ -11,43 +11,17 @@ import { texts } from "../../utils/texts";
 import Divider from "./../../components/common/Divider";
 import profile from "./../../assets/svg/contact.svg";
 import { Button, FormGroup, Input, Label, TextArea } from "./components/style";
-import { useState } from "react";
 import { ValidationError, useForm } from "@formspree/react";
 import Toast from "./components/toast";
+import Loading from "../../components/common/Loading";
+import { motion } from "framer-motion";
 
 const Contact = ({ language }) => {
   const desktop = useMediaQuery("(min-width: 1019px)");
-  const [toast, setToast] = useState(false);
   const [state, handleSubmit] = useForm("xwkgjbpr");
-  const [toastData, setToastData] = useState({
-    type: "",
-    message: "",
-    code: "",
-  });
-
-  const submitForm = async (e) => {
-    e.preventDefault();
-    await handleSubmit(e);
-  };
 
   if (state.succeeded) {
-    setToast(true);
-    setToastData({
-      type: "success",
-      message: texts[language].contact.success,
-      code: "",
-    });
-  }
-
-  if (state.errors) {
-    console.log(state.errors);
-    setToast(true);
-    setToastData({
-      type: "error",
-      message: texts[language].contact.error,
-      code: state.errors.getFormErrors(),
-    });
-    return;
+    document.getElementById("form").reset();
   }
 
   return (
@@ -60,10 +34,21 @@ const Contact = ({ language }) => {
         flexDirection: "column",
       }}
     >
-      <Toast />
+      {state.submitting && <Loading />}
       <Column width={desktop ? "50%" : "100%"}>
-        <PageTitle>{texts[language].contact.title}</PageTitle>
-        <Divider width={"30%"} />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: desktop ? -200 : -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <PageTitle>{texts[language].contact.title}</PageTitle>
+          <Divider width={"30%"} />
+        </motion.div>
       </Column>
       <div
         style={{
@@ -75,6 +60,32 @@ const Contact = ({ language }) => {
         }}
       >
         <RightSide>
+          {state.succeeded && (
+            <Toast
+              title={language === "en" ? "Success!" : "Sucesso!"}
+              text={
+                language === "en"
+                  ? "Your message has been sent successfully!"
+                  : "Sua mensagem foi enviada com sucesso!"
+              }
+              type={"success"}
+              className="show"
+            />
+          )}
+
+          {state.errors && (
+            <Toast
+              title={language === "en" ? "Error!" : "Erro!"}
+              text={
+                language === "en"
+                  ? "There was an error sending your message. Try again later."
+                  : "Houve um erro ao enviar sua mensagem. Tente novamente mais tarde."
+              }
+              type={"error"}
+              className="show"
+            />
+          )}
+
           <RightSideContent>
             <img src={profile} alt="Beatriz Neaime" />
           </RightSideContent>
@@ -82,8 +93,8 @@ const Contact = ({ language }) => {
         <LeftSide>
           <p>{texts[language].contact.text}</p>
           <form
-            action="https://formsubmit.co/beatrizneaime@outlook.com"
-            method="POST"
+            id="form"
+            onSubmit={handleSubmit}
             style={{
               margin: "2rem 0",
             }}
@@ -141,7 +152,7 @@ const Contact = ({ language }) => {
                   errors={state.errors}
                 />
               </FormGroup>
-              <Button type="submit">
+              <Button type="submit" disabled={state.submitting}>
                 {language === "en" ? "Send" : "Enviar"}
               </Button>
             </Column>

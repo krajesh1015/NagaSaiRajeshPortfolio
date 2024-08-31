@@ -27,14 +27,13 @@ const ProjectCard = styled.div`
     border-radius: 0 100px 10px 10px;
   }
 
-  &:hover {
+  /* &:hover {
     .project-hover {
       transition: all ease-in-out 0.5s;
       background-color: ${colors.purple};
       height: 100%;
       border-radius: 10px 100px 10px 10px;
-    }
-  }
+    } */
 
   @media screen and (max-width: 768px) {
     height: 200px;
