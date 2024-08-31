@@ -3,6 +3,8 @@ import br from '../assets/projects/br-finanças.png'
 import patinhas from '../assets/projects/patinhas-felizes.png'
 import advice from '../assets/projects/advice.png'
 import splitter from '../assets/projects/splitter.png'
+import marmoraria from "../assets/projects/marmoraria.png"
+
 
 export const projects = [
     {
@@ -26,6 +28,17 @@ export const projects = [
         path: null,
         git: "https://github.com/BeatrizNeaime/BR-financas",
         img: br
+    },
+    {
+        title: "Marmoraria dos Irmãos",
+        subtitle: {
+            pt: "Um site para uma marmoraria local. ",
+            en: "A website for a local marble shop."
+        },
+        technologies: ["WordPress"],
+        path: "https://www.marmorariadosirmaos.com.br",
+        git: null,
+        img: marmoraria
     },
     {
         title: "Patinhas Felizes",
