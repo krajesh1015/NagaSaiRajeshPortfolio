@@ -13,7 +13,6 @@ const Projects = ({ language }) => {
   const desktop = useMediaQuery("(min-width: 1279px)");
   const [modal, setModal] = useState(false);
   const [project, setProject] = useState();
-  const lang = localStorage.getItem("language");
 
   const handleModal = (project) => {
     console.log(project);

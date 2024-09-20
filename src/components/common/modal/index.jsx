@@ -1,7 +1,6 @@
-import useMediaQuery from "../../../hooks/useMediaQuery";
 import {
   ProjectLink,
-  ProjectTechnologies,
+  ProjectTechnologies
 } from "../../../scenes/projects/components/project/components/style";
 import { Row } from "../Layout";
 import {
@@ -10,11 +9,10 @@ import {
   ModalContainer,
   ModalOverlay,
   ModalText,
-  ModalTitle,
+  ModalTitle
 } from "./components/style";
 
 const Modal = ({ setModal, project, language }) => {
-  const desktop = useMediaQuery("(min-width: 1019px)");
 
   const handleModal = () => {
     setModal(false);
