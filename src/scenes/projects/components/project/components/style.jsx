@@ -110,6 +110,11 @@ const ProjectLink = styled.a`
   background: ${colors["deep-purple"]};
   cursor: pointer;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8px;
+  transition: background ease-in-out 0.5s;
 
   &:hover {
     transition: all ease-in-out 0.5s;
@@ -118,6 +123,7 @@ const ProjectLink = styled.a`
       rgba(245, 116, 185, 1) 14.7%,
       rgba(89, 97, 223, 1) 88.7%
     );
+    transition: background ease-in-out 0.5s;
   }
 
   @media screen and (max-width: 768px) {

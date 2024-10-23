@@ -25,7 +25,7 @@ export const texts = {
       title: "<sobre/>",
       text: "Olá! Meu nome é Beatriz e sou Engenheira de Computação. Atualmente, estou cursando pós-graduação em Engenharia de Software, aprofundando meus conhecimentos e habilidades na área. Trabalho como Desenvolvedora Full Stack Pleno na",
       empresa: " IAtrix",
-      link: "https://iatrix.com.br",
+      link: "https://dev.iatrix.com.br",
       text2: ", onde tenho a oportunidade de criar e aprimorar soluções tecnológicas completas, desde a interface do usuário até a infraestrutura de servidores. Comecei a aprender desenvolvimento web durante a pandemia, através de cursos online para aprender o básico e aprimorar minhas habilidades, garantindo que aprendi o suficiente para seguir em frente e tentar as tecnologias mais recentes. Estou sempre em busca de novos desafios e oportunidades para aplicar e expandir meu conhecimento. Aqui estão algumas tecnologias com as quais estou familiarizada:",
       text3: "Quer saber mais sobre minha jornada? Você pode baixar meu currículo clicando no botão abaixo.",
       article: articlePt
@@ -79,7 +79,7 @@ export const texts = {
       title: "<about/>",
       text: "Hello! My name is Beatriz and I am a Computer Engineer. I am currently pursuing a postgraduate degree in Software Engineering, furthering my knowledge and skills in the field. I work as a Mid-Level Full Stack Developer at",
       empresa: " IAtrix",
-      link: "https://iatrix.com.br",
+      link: "https://dev.iatrix.com.br",
       text2: ", where I have the opportunity to create and enhance complete technological solutions, from user interfaces to server infrastructure. I started learning web development during the pandemic, through online courses to learn the basics and enhance my skills, ensuring I learned enough to move forward and try the latest technologies. I am always looking for new challenges and opportunities to apply and expand my knowledge. Here are some technologies I am familiar with:",
       text3: "Want to know more about my journey? You can download my CV by clicking the button below.",
       article: articlePt
