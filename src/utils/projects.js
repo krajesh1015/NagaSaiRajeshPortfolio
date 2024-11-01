@@ -4,9 +4,21 @@ import patinhas from '../assets/projects/patinhas-felizes.png'
 import advice from '../assets/projects/advice.png'
 import splitter from '../assets/projects/splitter.png'
 import marmoraria from "../assets/projects/marmoraria.png"
+import pokedex from "../assets/projects/pokedex.png"
 
 
 export const projects = [
+    {
+        title: "Pokédex",
+        subtitle: {
+            pt: "Uma Pokédex simples e fácil de usar. Possui a opção de buscar pokémons por nome, habitat ou tipo; além dos três combinados.",
+            en: "A simple and easy-to-use Pokédex. It has the option to search for pokémons by name, habitat or type; in addition to the three combined."
+        },
+        git: "https://github.com/BeatrizNeaime/pokedex",
+        path: "https://pokedex-seven-inky.vercel.app",
+        technologies: ["React", "Styled-Components", "PokéAPI", "Context API"],
+        img: pokedex
+    },
     {
         title: "Arte de Caderno",
         subtitle: {
@@ -17,17 +29,6 @@ export const projects = [
         path: "https://artedecaderno.ifsuldeminas.edu.br",
         git: "https://github.com/ArtedeCaderno-IFSULDEMINAS/Arte-de-Caderno",
         img: arte
-    },
-    {
-        title: "BR Finanças",
-        subtitle: {
-            pt: "Um website para controle financeiro. Como este projeto foi feito como projeto interdisciplinar, o link do deploy não está disponível.",
-            en: "A financial control website. As this project was made as an interdisciplinary project, the deploy link is not available."
-        },
-        technologies: ["HandleBars", "Express", "MySQL"],
-        path: null,
-        git: "https://github.com/BeatrizNeaime/BR-financas",
-        img: br
     },
     {
         title: "Marmoraria dos Irmãos",
@@ -50,6 +51,17 @@ export const projects = [
         path: null,
         git: "https://github.com/BeatrizNeaime/PatinhasFelizes",
         img: patinhas
+    },
+    {
+        title: "BR Finanças",
+        subtitle: {
+            pt: "Um website para controle financeiro. Como este projeto foi feito como projeto interdisciplinar, o link do deploy não está disponível.",
+            en: "A financial control website. As this project was made as an interdisciplinary project, the deploy link is not available."
+        },
+        technologies: ["HandleBars", "Express", "MySQL"],
+        path: null,
+        git: "https://github.com/BeatrizNeaime/BR-financas",
+        img: br
     },
     {
         title: "Advice",

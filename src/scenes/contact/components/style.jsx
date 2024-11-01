@@ -3,7 +3,7 @@ import { colors } from "../../../styles/colors";
 import { fonts } from "../../../styles/fonts";
 
 const Input = styled.input`
-  height: 30px;
+  height: 40px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #000;
@@ -48,18 +48,19 @@ const Button = styled.button`
     rgba(245, 116, 185, 1) 14.7%,
     rgba(89, 97, 223, 1) 88.7%
   );
-  color: ${colors.pink};
+  color: white;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 10px;
   font-family: ${fonts["source-code"]};
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
 
   &:hover {
-    transition: background-color 0.3s;
-    color: white;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
   }
 `;
 

@@ -12,6 +12,7 @@ const ProjectCard = styled.div`
   height: 400px;
   padding: 10px;
   position: relative;
+  cursor: pointer;
 
   .project-hover {
     position: absolute;
