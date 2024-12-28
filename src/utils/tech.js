@@ -19,6 +19,5 @@ export const technologies = [
     "React Native",
     "C#",
     ".NET",
-    "Java",
-    "Java Spring"
+    "Razor"
 ]

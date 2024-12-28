@@ -1,6 +1,6 @@
 import {
   ProjectLink,
-  ProjectTechnologies
+  ProjectTechnologies,
 } from "../../../scenes/projects/components/project/components/style";
 import { Row } from "../Layout";
 import {
@@ -9,11 +9,10 @@ import {
   ModalContainer,
   ModalOverlay,
   ModalText,
-  ModalTitle
+  ModalTitle,
 } from "./components/style";
 
 const Modal = ({ setModal, project, language }) => {
-
   const handleModal = () => {
     setModal(false);
   };
@@ -43,14 +42,24 @@ const Modal = ({ setModal, project, language }) => {
           </ModalText>
           <Row justify="flex-start">
             {project.git && (
-              <ProjectLink href={project.git}>
+              <ProjectLink target="_blank" href={project.git}>
                 <i className="fab fa-github"></i> GitHub
               </ProjectLink>
             )}
             {project.path && (
-              <ProjectLink href={project.path}>
-                <i className="fas fa-external-link-alt"></i>{" "}
-                {language === "pt" ? "Visitar" : "Visit"}
+              <ProjectLink target="_blank" href={project.path}>
+                <i
+                  className={`fas ${
+                    project?.isMobile ? "fa-download" : "fa-external-link-alt"
+                  }`}
+                ></i>{" "}
+                {project?.isMobile
+                  ? language === "pt"
+                    ? "Download para Android"
+                    : "Download for Android"
+                  : language === "pt"
+                  ? "Visitar"
+                  : "Visit"}
               </ProjectLink>
             )}
           </Row>

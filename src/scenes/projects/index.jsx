@@ -14,9 +14,9 @@ const Projects = ({ language }) => {
   const [modal, setModal] = useState(false);
   const [project, setProject] = useState();
 
-  const handleModal = (project) => {
+  const handleModal = async (project) => {
     console.log(project);
-    setProject(project);
+    await setProject(project);
     setModal(true);
   };
 
@@ -54,31 +54,15 @@ const Projects = ({ language }) => {
       )}
 
       <Row align="flex-start" style={{ marginTop: desktop ? "" : "1rem" }}>
-        <Project
-          project={projects[0]}
-          language={language}
-          handleClick={() => handleModal(projects[0])}
-        />
-        <Project
-          project={projects[1]}
-          language={"pt"}
-          handleClick={() => handleModal(projects[1])}
-        />
-        <Project
-          project={projects[2]}
-          language={language}
-          handleClick={() => handleModal(projects[2])}
-        />
-        <Project
-          project={projects[3]}
-          language={language}
-          handleClick={() => handleModal(projects[3])}
-        />
-        <Project
-          project={projects[4]}
-          language={language}
-          handleClick={() => handleModal(projects[4])}
-        />
+        {projects.map((project, index) => (
+          <Project
+            project={project}
+            language={language}
+            handleClick={() => handleModal(project)}
+            isMobile={project?.isMobile}
+            key={index}
+          />
+        ))}
       </Row>
     </SceneLayout>
   );

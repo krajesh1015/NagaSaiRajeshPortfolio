@@ -5,6 +5,7 @@ import advice from '../assets/projects/advice.png'
 import splitter from '../assets/projects/splitter.png'
 import marmoraria from "../assets/projects/marmoraria.png"
 import pokedex from "../assets/projects/pokedex.png"
+import neuro from "../assets/projects/neuro.png"
 
 
 export const projects = [
@@ -16,8 +17,20 @@ export const projects = [
         },
         git: "https://github.com/BeatrizNeaime/pokedex",
         path: "https://pokedex-seven-inky.vercel.app",
-        technologies: ["React", "Styled-Components", "PokéAPI", "Context API"],
+        technologies: ["React", "Styled-Components", "PokéAPI", "Context API", "C#", "MySQL", "JwtBearer"],
         img: pokedex
+    },
+    {
+        title: "Neuro Training",
+        subtitle: {
+            pt: "Um aplicativo desenvolvido para ajudar nos exercícios da fisioterapia em  pacientes neurológicos e geriátricos. Este projeto foi feito como auxílio para a minha irmã, estudante de fisioterapia, com o intuito de utilizar a tecnologia como ferramenta para sua profissão e de outros profissionais da área da saúde. Infelizmente, está disponível apenas para Android.",
+            en: "An app developed to help with physiotherapy exercises in neurological and geriatric patients. This project was made to help my sister, a physiotherapy student, to use technology as a tool for her profession and other health professionals. Unfortunately, it is only available for Android.",
+        },
+        technologies: ["React Native"],
+        path: "https://expo.dev/artifacts/eas/fWABaJhCUF2rGS9efn9PHu.apk",
+        git: "https://github.com/BeatrizNeaime/neuro-training",
+        img: neuro,
+        isMobile: true
     },
     {
         title: "Arte de Caderno",
@@ -28,7 +41,7 @@ export const projects = [
         technologies: ["React", "Styled-Components"],
         path: "https://artedecaderno.ifsuldeminas.edu.br",
         git: "https://github.com/ArtedeCaderno-IFSULDEMINAS/Arte-de-Caderno",
-        img: arte
+        img: arte,
     },
     {
         title: "Marmoraria dos Irmãos",
