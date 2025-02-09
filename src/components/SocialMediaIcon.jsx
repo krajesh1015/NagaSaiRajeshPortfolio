@@ -25,7 +25,7 @@ const SocialMediaWrapper = styled.a`
 const SocialMediaIcon = ({ icon, path }) => {
   return (
     <SocialMediaWrapper href={path} target="_blank">
-      <i class={`fa-brands ${icon}`}></i>
+      <i className={`fa-brands ${icon}`}></i>
     </SocialMediaWrapper>
   );
 };

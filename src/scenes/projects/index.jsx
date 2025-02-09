@@ -15,7 +15,6 @@ const Projects = ({ language }) => {
   const [project, setProject] = useState();
 
   const handleModal = async (project) => {
-    console.log(project);
     await setProject(project);
     setModal(true);
   };

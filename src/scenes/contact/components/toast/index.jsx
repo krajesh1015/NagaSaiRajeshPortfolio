@@ -136,8 +136,8 @@ const Toast = ({ title, text, type }) => {
   return (
     <ToastContainer className="toast show">
       <div className="toast-content">
-        {type === "success" && <i class="fa-solid fa-check icon"></i>}
-        {type === "error" && <i class="fa-solid fa-x-mark icon"></i>}
+        {type === "success" && <i className="fa-solid fa-check icon"></i>}
+        {type === "error" && <i className="fa-solid fa-x-mark icon"></i>}
         <div className="message">
           <span className="text text-1">{title}</span>
           <span className="text text-2">{text}</span>

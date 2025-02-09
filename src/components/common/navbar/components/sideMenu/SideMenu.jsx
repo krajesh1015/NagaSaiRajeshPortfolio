@@ -24,7 +24,9 @@ const SideMenu = ({ selectedPage, setSelectedPage, language, setLanguage }) => {
   return (
     <>
       <HamburgerMenuContainer onClick={() => setSideMenu(!sideMenu)}>
-        <i class={`fa-solid ${sideMenu ? "fa-circle-xmark" : "fa-bars"}`}></i>
+        <i
+          className={`fa-solid ${sideMenu ? "fa-circle-xmark" : "fa-bars"}`}
+        ></i>
       </HamburgerMenuContainer>
 
       <SideMenuContainer active={sideMenu}>

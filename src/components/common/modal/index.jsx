@@ -21,7 +21,7 @@ const Modal = ({ setModal, project, language }) => {
     <ModalOverlay onClick={() => setModal(false)}>
       <ModalContainer>
         <ModalClose onClick={handleModal}>
-          <i class="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-xmark"></i>
         </ModalClose>
         <ModalBody>
           <ModalTitle>

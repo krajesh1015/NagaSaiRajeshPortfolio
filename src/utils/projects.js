@@ -17,17 +17,17 @@ export const projects = [
         },
         git: "https://github.com/BeatrizNeaime/pokedex",
         path: "https://pokedex-seven-inky.vercel.app",
-        technologies: ["React", "Styled-Components", "PokéAPI", "Context API", "C#", "MySQL", "JwtBearer"],
+        technologies: ["React", "Styled-Components", "PokéAPI", "Context API", "C#", "MySQL", "JWTBearer"],
         img: pokedex
     },
     {
         title: "Neuro Training",
         subtitle: {
-            pt: "Um aplicativo desenvolvido para ajudar nos exercícios da fisioterapia em  pacientes neurológicos e geriátricos. Este projeto foi feito como auxílio para a minha irmã, estudante de fisioterapia, com o intuito de utilizar a tecnologia como ferramenta para sua profissão e de outros profissionais da área da saúde. Infelizmente, está disponível apenas para Android.",
+            pt: "Um aplicativo desenvolvido para ajudar nos exercícios da fisioterapia em  pacientes neurológicos e geriátricos. Este projeto foi feito como auxílio para a minha irmã, estudante de fisioterapia, com o intuito de utilizar a tecnologia como ferramenta para sua profissão e de outros profissionais da área da saúde. Infelizmente, está disponível apenas para Android.",
             en: "An app developed to help with physiotherapy exercises in neurological and geriatric patients. This project was made to help my sister, a physiotherapy student, to use technology as a tool for her profession and other health professionals. Unfortunately, it is only available for Android.",
         },
         technologies: ["React Native"],
-        path: "https://expo.dev/artifacts/eas/fWABaJhCUF2rGS9efn9PHu.apk",
+        path: "",
         git: "https://github.com/BeatrizNeaime/neuro-training",
         img: neuro,
         isMobile: true

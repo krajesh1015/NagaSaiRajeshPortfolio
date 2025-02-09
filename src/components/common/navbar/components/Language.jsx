@@ -10,7 +10,7 @@ const LanguageFlag = styled.img`
 const Language = ({ language, setLanguage }) => {
   return (
     <LanguageFlag
-      src={language === "pt" ? pt : en}
+      src={language === "pt" ? en : pt}
       alt={language === "pt" ? "Português" : "English"}
       onClick={() => setLanguage(language === "pt" ? "en" : "pt")}
     />

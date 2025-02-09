@@ -83,7 +83,7 @@ const About = ({ language, selectedPage }) => {
         <p style={{ marginTop: "1rem" }}>{texts[language].about.text3}</p>
 
         <PDFViewer onClick={() => downloadPDF(texts[language].about.article)}>
-          <i class="fa-regular fa-file-pdf"></i> {texts[language].cv.btn}
+          <i className="fa-regular fa-file-pdf"></i> {texts[language].cv.btn}
         </PDFViewer>
       </LeftSide>
     </SceneLayout>
