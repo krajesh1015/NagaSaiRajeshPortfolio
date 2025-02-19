@@ -10,9 +10,9 @@ This is a personal portfolio project built using React and Styled Components, de
 
 ## ✨ Features
 
-- "About Me" page with a brief overview of his professional journey
+- "About Me" page with a brief overview of my professional journey
 - "Skills" section featuring the technologies and tools I work with
-- "Projects" page showcasing his work with images, descriptions, and links to live demos or GitHub
+- "Projects" page showcasing my work with images, descriptions, and links to live demos or GitHub
 - Contact form for recruiters or clients to reach out to me
 - Fully responsive design, adapted for various devices (desktops, tablets, mobile phones)
 - Change language button. There are two languages available: Portuguese and English
