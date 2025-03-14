@@ -32,7 +32,7 @@ const About = ({ language, selectedPage }) => {
       {desktop && (
         <RightSide>
           <RightSideContent>
-            <img src={profile} alt="Beatriz Neaime" />
+            <img src={profile} alt="Naga Sai Rajesh" />
           </RightSideContent>
         </RightSide>
       )}
@@ -54,9 +54,6 @@ const About = ({ language, selectedPage }) => {
 
         <p>
           {texts[language].about.text}{" "}
-          <a href={texts[language].about.link} className="empresa">
-            {texts[language].about.empresa}
-          </a>
           {texts[language].about.text2}
         </p>
 

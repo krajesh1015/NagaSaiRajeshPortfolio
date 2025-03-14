@@ -41,7 +41,7 @@ const SkillNumber = styled.p`
 const SkillTitle = styled.h3`
   font-family: ${fonts["source-code"]};
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 26px;
   max-width: 70%;
   word-wrap: break-word;
 

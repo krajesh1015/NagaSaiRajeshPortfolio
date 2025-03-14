@@ -24,41 +24,41 @@ const Navbar = ({ selectedPage, setSelectedPage, language, setLanguage }) => {
             color: "inherit",
           }}
         >
-          <NavBrand>{"<BN/>"}</NavBrand>
+          <NavBrand>{"Rajesh"}</NavBrand>
         </AnchorLink>
         {desktop && (
           <NavLinkContainer>
             <Link
-              page="home"
+              page="Home"
               label={language === "pt" ? "início" : "home"}
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="about"
+              page="About"
               label={language === "pt" ? "sobre" : "about"}
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="skills"
+              page="Skills"
               label={language === "pt" ? "habilidades" : "skills"}
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Link
+            {/* <Link
               page="projects"
               label={language === "pt" ? "projetos" : "projects"}
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
+            /> */}
             <Link
-              page="contact"
+              page="Contact"
               label={language === "pt" ? "contato" : "contact"}
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Language language={language} setLanguage={setLanguage} />
+            {/* <Language language={language} setLanguage={setLanguage} /> */}
           </NavLinkContainer>
         )}
         {small && (

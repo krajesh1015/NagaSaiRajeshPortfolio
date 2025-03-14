@@ -3,7 +3,7 @@ import { fonts } from "../../../styles/fonts";
 import { colors } from "../../../styles/colors";
 
 const MainTitle = styled.h1`
-  font-size: 60px;
+  font-size: 49px;
   line-height: 60px;
   font-family: ${fonts.poppins};
   color: ${colors.purple};

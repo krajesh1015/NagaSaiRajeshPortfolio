@@ -86,9 +86,9 @@ const Contact = ({ language }) => {
             />
           )}
 
-          <RightSideContent>
-            <img src={profile} alt="Beatriz Neaime" />
-          </RightSideContent>
+          {/* <RightSideContent>
+            <img src={profile} alt="Naga Sai Rajesh" />
+          </RightSideContent> */}
         </RightSide>
         <LeftSide>
           <p>{texts[language].contact.text}</p>
