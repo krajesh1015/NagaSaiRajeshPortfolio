@@ -1,11 +1,11 @@
 import articlePt from "../assets/articles/TCC.pdf"
-import ptcv from "../assets/cv/BeatrizNeaime_CV[PT].pdf"
-import encv from "../assets/cv/BeatrizNeaime_CV[EN].pdf"
+import ptcv from "../assets/cv/Naga Sai Rajesh Kurapati.pdf"
+import encv from "../assets/cv/Naga Sai Rajesh Kurapati.pdf"
 
 export const texts = {
   pt: {
     cv: {
-      title: "Currículo - Beatriz Neaime",
+      title: "Currículo - Naga Sai Rajesh Kurapati",
       btn: "Currículo",
       cv: ptcv
     },
@@ -59,7 +59,7 @@ export const texts = {
   },
   en: {
     cv: {
-      title: "Beatriz Neaime's CV",
+      title: "Naga Sai Rajesh Kurapati's CV",
       btn: "CV",
       cv: encv
     },
@@ -76,37 +76,37 @@ export const texts = {
       contact: "Contact",
     },
     about: {
-      title: "<about/>",
-      text: "Hello! My name is Beatriz and I am a Computer Engineer. I am currently pursuing a postgraduate degree in Software Engineering, furthering my knowledge and skills in the field. I work as a Mid-Level Full Stack Developer at",
+      title: "<About/>",
+      text: "I am a Full Stack Developer with over 2.5 years of experience specializing in Angular and Java Spring Boot. Currently working as a Software Engineer at Cognizant Technology Solutions, I have resolved complex issues in Angular and Java applications, optimized performance, developed reusable business logic components, integrated secure APIs, and built dynamic UIs with Angular Material, increasing user engagement by 30%. Additionally, I have optimized backend services using Spring Boot, reducing server response times by 15%. Previously, as a Full Stack Developer Intern, I gained hands-on experience in feature enhancements and API integrations. I am committed to continuous learning and staying updated with industry advancements.",
       empresa: " Sistema ESO",
       link: "https://sistemaeso.com.br",
-      text2: ", where I have the opportunity to create and enhance complete technological solutions, from user interfaces to server infrastructure. I started learning web development during the pandemic, through online courses to learn the basics and enhance my skills, ensuring I learned enough to move forward and try the latest technologies. I am always looking for new challenges and opportunities to apply and expand my knowledge. Here are some technologies I am familiar with:",
+      text2: ", Here are some technologies I am familiar with:",
       text3: "Want to know more about my journey? You can download my CV by clicking the button below.",
       article: articlePt
     },
     skills: {
-      title: "<skills/>",
+      title: "<Skills/>",
       text: `Since the beginning of my journey as a developer, I've improved my soft skills, always seeking to be a better professional. `,
       1: {
-        title: "non-stop learning",
+        title: "Non-stop learning",
         text: "Technology never stops updating, that's why those who work with technology should not stop updating themselves either.",
       },
       2: {
-        title: "communicative",
+        title: "Communicative",
         text: "No matter your profession, communication is always a need in any field.",
       },
       3: {
-        title: "open-minded",
+        title: "Receptive",
         text: "When you work for people, you need to accept new ideas from clients or team members and be able to work on them.",
 
       }
     },
     projects: {
       title: "<projects/>",
-      text: "Projects are important ways to improve your skills and show what you are capable of. Here are some of my most recent projects. You can click on the image to find out more. ",
+      text: "Projects are important ways to improve your skills and show what you are capable of. Here are some of my most recent projects.",
     },
     contact: {
-      title: "<contact/>",
+      title: "<Contact/>",
       text: "Feel free to send me a message!.",
       btn: "Send a message"
     }

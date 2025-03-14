@@ -34,9 +34,9 @@ const Home = ({ setSelectedPage, language, selectedPage }) => {
           }}
         >
           <MainTitle>
-            {`<Beatriz`}
+            {`Naga Sai Rajesh`}
             <br />
-            {`Neaime/>`}
+            {`Kurapati`}
           </MainTitle>
           <Subtitle>{texts[language].landing.subtitle}</Subtitle>
           <Row
@@ -47,16 +47,8 @@ const Home = ({ setSelectedPage, language, selectedPage }) => {
             }}
           >
             <SocialMediaIcon
-              icon={"fa-github"}
-              path={"https://github.com/BeatrizNeaime"}
-            />
-            <SocialMediaIcon
               icon={"fa-linkedin-in"}
-              path={"https://www.linkedin.com/in/beatriz-neaime-/"}
-            />
-            <SocialMediaIcon
-              icon={"fa-instagram"}
-              path={"https://www.instagram.com/beatrizneaime/"}
+              path={"https://www.linkedin.com/in/rajesh-kurapati-naga-sai"}
             />
           </Row>
         </motion.div>
